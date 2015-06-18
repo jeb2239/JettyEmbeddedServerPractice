@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+    <info organisation="myorg"
+          module=""/>
+    <dependencies>
+        <dependency org="org.eclipse.jetty.aggregate" name="jetty-all-server" rev="8.0.0.M0"/>
+        <dependency org="com.fasterxml.jackson.core" name="jackson-databind" rev="2.2.1"/>
+        <dependency org="com.fasterxml.jackson.core" name="jackson-core" rev="2.2.1"/>
+        <dependency org="com.fasterxml.jackson.core" name="jackson-annotations" rev="2.2.1"/>
+        <dependency org="org.eclipse.jetty" name="jetty-websocket" rev="8.1.14.v20131031"/>
+    </dependencies>
+
+
+
+
+</ivy-module>
