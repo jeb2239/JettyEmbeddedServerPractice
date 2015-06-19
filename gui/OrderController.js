@@ -6,11 +6,22 @@
 
 angular.module("main",[]).controller("OrderController",function($scope){
 
-        $scope.orders=
+
+        $scope.orders=[
+            {
+                uid: 43,
+                sym: 'ibm'
+            },
+
+            {
+                uid: 456,
+                sym: 'gcc'
+            }
+        ];
 
 
 
     }
-)
+);
 
 })();

@@ -17,7 +17,7 @@ public class test {
 
             Server server = new Server(); //embedding a jetty server right into main
             SelectChannelConnector connector0 = new SelectChannelConnector();
-            connector0.setPort(8080); //this is the port for a specific connector
+            connector0.setPort(8880); //this is the port for a specific connector
             connector0.setMaxIdleTime(30000);
             connector0.setRequestHeaderSize(8192);
 

@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <title>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <script src="OrderController.js"></script>
     </title>
 
 </head>
-<body ng-app="" >
+<body ng-app="main" ng-controller="OrderController">
 
-Hello ppl
+<table>
+    <tr ng-repeat="order in orders">
+        <div ng-repeat="(key,value) in order">
+        <td>
+            {{value}}
+        </td>
+        </div>
+    </tr>
+</table>
 </body>
 </html>
