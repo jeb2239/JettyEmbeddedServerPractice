@@ -9,14 +9,15 @@
 
 </head>
 <body ng-app="main" ng-controller="OrderController">
+<script src="OrderController.js"></script>
 
 <table>
     <tr ng-repeat="order in orders">
-        <div ng-repeat="(key,value) in order">
-        <td>
-            {{value}}
+
+        <td ng-repeat="item in  order">
+            {{item}}
         </td>
-        </div>
+
     </tr>
 </table>
 </body>
