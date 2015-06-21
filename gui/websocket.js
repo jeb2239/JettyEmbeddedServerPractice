@@ -1,19 +1,10 @@
-/**
- * Created by barriosj on 6/18/15.
- */
 
-//remove from global scope
 
-(function(angular) {
+(function(angular){
 
-   var app = angular.module('main',[]);
 
-    app.controller('OrderController',['$scope',function($scope){
-        $scope.orders= {
-        898 : { sym:'IBM'},
-        636 : {sym: 'HDF'}
-
-    };
+angular.module("Wolverine")
+    .controller("OrderController",function($scope) {
 
         if (!window.WebSocket)
             alert("WebSocket not supported by this browser");
@@ -57,26 +48,42 @@
             _onmessage: function (m) {
                 if (m.data) {
 
-                    var data =JSON.parse( m.data);
-                    if($scope.orders.hasOwnProperty(data.id.toString())){
+                    $scope.orders = [];
 
-                    $scope.orders[data.id.toString()].sym = data.sym;
-                    }
-                    else{
-                        $scope.orders[data.id.toString()] = {sym: data.sym};
-                    }
-                    $scope.$digest();
+                    $scope.orders.append(JSON.parse(m.data));
+
+                    // add data to the chart
+
+//			console.log('data received: ' + m.data);
+//
+//			var point = [ (new Date()).getTime(), parseInt(m.data) ];
+//
+//			var msg = 'point for chart: (' + point[0] + ', ' + point[1] + ')';
+//
+//			if (isNaN(point[1])) {
+//				point[1] = 0;
+//				console.log('received non-numeric data, updated point for chart: (' + point[0] + ', ' + point[1] + ')');
+//			}
+//
+//			// display at most a fixed number of points
+//			var maxNumberOfPointsDisplayed = 60;
+//			var shift = randomData.data.length > maxNumberOfPointsDisplayed;
+//		    randomData.addPoint(point, true, shift);
+//
+//		    // write it on messagebox
+//			var spanText = document.createElement('span');
+//			spanText.className = 'text';
+//			spanText.innerHTML = msg;
+//			var lineBreak = document.createElement('br');
+//
+//			var messageBox = $('messageBox');
+//			messageBox.append(spanText, lineBreak);
+//			messageBox.scrollTop = messageBox.scrollHeight - messageBox.clientHeight;
                 }
             },
 
             _onclose: function (m) {
                 this._ws = null;
-            }}
-server.connect('ws://127.0.0.1:8880/stocks');
-
-    }]);
-
-
-
-
-})(window.angular);
+            }
+        };
+    });)(window.angular);

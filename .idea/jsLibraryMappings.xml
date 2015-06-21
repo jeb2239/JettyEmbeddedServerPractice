@@ -3,5 +3,6 @@
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$/gui/OrderController.js" libraries="{angular}" />
     <file url="file://$PROJECT_DIR$/gui/index.html" libraries="{angular}" />
+    <file url="file://$PROJECT_DIR$/gui/websocket.js" libraries="{angular}" />
   </component>
 </project>

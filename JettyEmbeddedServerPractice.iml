@@ -16,6 +16,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="angular" level="application" />
     <orderEntry type="module-library">
       <library name="IvyIDEA">
         <CLASSES>
@@ -52,6 +53,15 @@
           <root url="jar://$USER_HOME$/.ivy2/cache/org.eclipse.jetty/jetty-http/jars/jetty-http-8.1.14.v20131031.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.eclipse.jetty/jetty-server/jars/jetty-server-8.1.14.v20131031.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.eclipse.jetty/jetty-continuation/jars/jetty-continuation-8.1.14.v20131031.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.12.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.12.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.2.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.17.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/logkit/logkit/jars/logkit-1.0.1.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/avalon-framework/avalon-framework/jars/avalon-framework-4.1.5.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/javax.servlet/servlet-api/jars/servlet-api-2.3.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.12.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.12.jar!/" />
         </CLASSES>
         <JAVADOC>
           <root url="jar://$USER_HOME$/.ivy2/cache/org.mortbay.jetty/servlet-api/javadocs/servlet-api-3.0.20100224-javadoc.jar!/" />
@@ -82,6 +92,12 @@
           <root url="jar://$USER_HOME$/.ivy2/cache/org.eclipse.jetty.orbit/javax.servlet/javadocs/javax.servlet-3.0.0.v201112011016-javadoc.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.eclipse.jetty/jetty-server/javadocs/jetty-server-8.1.14.v20131031-javadoc.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.eclipse.jetty/jetty-continuation/javadocs/jetty-continuation-8.1.14.v20131031-javadoc.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/slf4j-api/javadocs/slf4j-api-1.7.12-javadoc.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/slf4j-simple/javadocs/slf4j-simple-1.7.12-javadoc.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/commons-logging/commons-logging/javadocs/commons-logging-1.2-javadoc.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/log4j/log4j/javadocs/log4j-1.2.17-javadoc.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/jcl-over-slf4j/javadocs/jcl-over-slf4j-1.7.12-javadoc.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/slf4j-log4j12/javadocs/slf4j-log4j12-1.7.12-javadoc.jar!/" />
         </JAVADOC>
         <SOURCES>
           <root url="jar://$USER_HOME$/.ivy2/cache/org.eclipse.jetty.aggregate/jetty-all-server/sources/jetty-all-server-8.0.0.M0-sources.jar!/" />
@@ -116,9 +132,16 @@
           <root url="jar://$USER_HOME$/.ivy2/cache/org.eclipse.jetty.orbit/javax.servlet/sources/javax.servlet-3.0.0.v201112011016-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.eclipse.jetty/jetty-server/sources/jetty-server-8.1.14.v20131031-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.eclipse.jetty/jetty-continuation/sources/jetty-continuation-8.1.14.v20131031-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/slf4j-api/sources/slf4j-api-1.7.12-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/slf4j-simple/sources/slf4j-simple-1.7.12-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/commons-logging/commons-logging/sources/commons-logging-1.2-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/log4j/log4j/sources/log4j-1.2.17-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/logkit/logkit/sources/logkit-1.0.1-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/javax.servlet/servlet-api/sources/servlet-api-2.3-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/jcl-over-slf4j/sources/jcl-over-slf4j-1.7.12-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/slf4j-log4j12/sources/slf4j-log4j12-1.7.12-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="library" name="angular" level="application" />
   </component>
 </module>

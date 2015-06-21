@@ -1,3 +1,4 @@
+import org.eclipse.jetty.plus.servlet.ServletHandler;
 import org.eclipse.jetty.server.Connector;
 import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Server;
@@ -5,6 +6,13 @@ import org.eclipse.jetty.server.handler.DefaultHandler;
 import org.eclipse.jetty.server.handler.HandlerList;
 import org.eclipse.jetty.server.handler.ResourceHandler;
 import org.eclipse.jetty.server.nio.SelectChannelConnector;
+import org.eclipse.jetty.servlet.ServletContextHandler;
+import org.eclipse.jetty.servlet.ServletHolder;
+import org.eclipse.jetty.websocket.WebSocket;
+import org.eclipse.jetty.websocket.WebSocketHandler;
+
+import javax.servlet.Servlet;
+import javax.servlet.http.HttpServletRequest;
 
 
 /**
@@ -15,19 +23,18 @@ public class test {
     public static void main(String[] args) throws Exception
     {
 
-            Server server = new Server(); //embedding a jetty server right into main
-            SelectChannelConnector connector0 = new SelectChannelConnector();
-            connector0.setPort(8880); //this is the port for a specific connector
-            connector0.setMaxIdleTime(30000);
-            connector0.setRequestHeaderSize(8192);
+            Server server = new Server(8880); //embedding a jetty server right into main
 
-            server.setConnectors(new Connector[]{connector0});
+
+
 
             //files can be served via Resource_Handler
             ResourceHandler resourceHandler = new ResourceHandler();
             resourceHandler.setDirectoriesListed(true);
             resourceHandler.setWelcomeFiles(new String[]{"index.html"});
-            resourceHandler.setResourceBase("gui/");
+            resourceHandler.setResourceBase("/home/barriosj/IdeaProjects/JettyEmbeddedServerPractice/gui");
+
+
 
             //we can add this to our handler list for this specific server
             HandlerList handlerList= new HandlerList();
